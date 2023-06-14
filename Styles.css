@@ -1,6 +1,6 @@
 .flag {
-    width: 330px;
-    height: 232px;
+    width: 360px;
+    height: 230px;
     background-color: red;
     position: absolute;
 }
@@ -16,7 +16,7 @@
 }
 
 #flag-3 {
-    top: 275px;
+    top: 295px;
     left: 580px;
 }
 
