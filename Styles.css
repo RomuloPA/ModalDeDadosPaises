@@ -1,0 +1,31 @@
+.flag {
+    width: 330px;
+    height: 232px;
+    background-color: red;
+    position: absolute;
+}
+
+#flag-1 {
+    top: 120px;
+    left: 150px;
+}
+
+#flag-2 {
+    top: 120px;
+    left: 1000px;
+}
+
+#flag-3 {
+    top: 275px;
+    left: 580px;
+}
+
+#flag-4 {
+    top: 470px;
+    left: 150px;
+}
+
+#flag-5 {
+    top: 470px;
+    left: 1000px;
+}   
