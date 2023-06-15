@@ -7,21 +7,37 @@
     <title>Modal Para Consulta dos Dados de Alguns Países</title>
 </head>
 <body>
-    <h1>Clique na bandeira desejada para saber alguns dados do paí:</h1>
+    <h1>Clique na bandeira desejada para saber alguns dados do país:</h1>
     <div class="flag" id="flag-1">
-        <img src="Russia.png" alt="Bandeira do Brasil" width="360" height="230">
+        <img src="Russia.png" alt="Bandeira da Rússia" width="360" height="230" onclick="openModal(1)">
     </div>
     <div class="flag" id="flag-2">
-        <img src="Canada.png" alt="Bandeira do Brasil" width="360" height="230">
+        <img src="Canada.png" alt="Bandeira do Canadá" width="360" height="230" onclick="openModal(2)">
     </div>
     <div class="flag" id="flag-3">
-        <img src="China.png" alt="Bandeira do Brasil" width="360" height="230">
+        <img src="China.png" alt="Bandeira da China" width="360" height="230" onclick="openModal(3)">
     </div>
     <div class="flag" id="flag-4">
-        <img src="Estados-Unidos.png" alt="Bandeira do Brasil" width="360" height="230">
+        <img src="Estados-Unidos.png" alt="Bandeira dos Estados Unidos" width="360" height="230" onclick="openModal(4)">
     </div>
     <div class="flag" id="flag-5">
-        <img src="Brasil.jpg" alt="Bandeira do Brasil" width="360" height="230">
+        <img src="Brasil.jpg" alt="Bandeira do Brasil" width="360" height="230" onclick="openModal(5)">
     </div>
+
+
+      <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h1>Alguns dados sobre o país:</h1>
+            <p id="info-modal"></p>
+            <p><strong>País:</strong> <span id="country-name"></span></p>
+            <p><strong>Capital:</strong> <span id="country-capital"></span></p>
+            <p><strong>Área Territorial:</strong> <span id="country-territorial-area"></span></p>
+            <p><strong>População:</strong> <span id="country-population"></span></p>
+            <button class="btn-close" onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
 </body>
 </html>
