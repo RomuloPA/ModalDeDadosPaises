@@ -1,35 +1,44 @@
 function openModal(countryID) {
-    var modal = document.getElementById("modal");
-    var countryName = document.getElementById("country-name");
-    var countryCapital = document.getElementById("country-capital");
-    var countryTerritorialArea = document.getElementById("country-territorial-area");
-    var countryPopulation = document.getElementById("country-population");
 
-    var countryData = [
-        {Name: "Rússia", Capital: "Moscou", TerritorialArea: "17,1 milhões de quilômetros quadrados", Population: "145 milhões de habitantes"},
-        {Name: "Canadá", Capital: "Ottawa", TerritorialArea: "9,98 milhões de quilômetros quadrados", Population: "38 milhões de habitantes"},
-        {Name: "China", Capital: "Pequim", TerritorialArea: "9,6 milhões de quilômetros quadrados", Population: "1,4 bilhões de habitantes"},
-        {Name: "Estados Unidos da América", Capital: "Washington", TerritorialArea: "9,5 milhões de quilômetros quadrados", Population: "331 milhões de habitantes"},
-        {Name: "Brasil", Capital: "Brasília", TerritorialArea: "8,5 milhões de quilômetros quadrados", Population: "213 milhões de habitantes"}
-    ];
+  var modal = document.getElementById("modal");
+  var countryName = document.getElementById("country-name");
+  var countryCapital = document.getElementById("country-capital");
+  var countryTerritorialArea = document.getElementById("country-territorial-area");
+  var countryPopulation = document.getElementById("country-population");
 
-    if (countryID >= 1 && countryID <= countryData.length) {
-        var country = countryData[countryID - 1];
+  var countryData = [
+    {Name: "Rússia", Capital: "Moscou", TerritorialArea: "17,1 milhões de quilômetros quadrados", Population: "145 milhões de habitantes"},
+    {Name: "Canadá", Capital: "Ottawa", TerritorialArea: "9,98 milhões de quilômetros quadrados", Population: "38 milhões de habitantes"},
+    {Name: "China", Capital: "Pequim", TerritorialArea: "9,6 milhões de quilômetros quadrados", Population: "1,4 bilhões de habitantes"},
+    {Name: "Estados Unidos da América", Capital: "Washington", TerritorialArea: "9,5 milhões de quilômetros quadrados", Population: "331 milhões de habitantes"},
+    {Name: "Brasil", Capital: "Brasília", TerritorialArea: "8,5 milhões de quilômetros quadrados", Population: "213 milhões de habitantes"}
+  ];
 
-        countryName.textContent = country.Name;
-        countryCapital.textContent = country.Capital;
-        countryTerritorialArea.textContent = country.TerritorialArea;
-        countryPopulation.textContent = country.Population;
-    }
+  if (countryID >= 1 && countryID <= countryData.length) {
+    var country = countryData[countryID - 1];
 
-    modal.style.display = 'block';
+    countryName.textContent = country.Name;
+    countryCapital.textContent = country.Capital;
+    countryTerritorialArea.textContent = country.TerritorialArea;
+    countryPopulation.textContent = country.Population;
+  }
+
+  modal.style.display = 'block';
+
+  var abc = document.getElementById("div-body");
+  abc.style.opacity = '0.3';
+  abc.style.filter = 'blur(10px)';
 }
 
 function closeModal() {
-    let modal = document.getElementById("modal");
+  var modal = document.getElementById("modal");
+  modal.style.display = 'none';
 
-    modal.style.display = 'none';
+  var abc = document.getElementById("div-body");
+  abc.style.opacity = '1';
+  abc.style.filter = 'none';
 }
+
 
 
 

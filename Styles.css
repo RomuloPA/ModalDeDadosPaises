@@ -1,6 +1,10 @@
 body {
-    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+    font-size: 22px;
+    background-color: rgb(0, 0, 0, 0.8);
     font-family: sans-serif;
+    /*opacity: 0.3;*/
 }
 
 .flag {
@@ -38,7 +42,7 @@ body {
     position: relative;
     background-color: rgba(0, 0, 0, 0.7);
     margin: 0 auto;
-    margin-top: 12%;
+    margin-top: 11%;
     max-width: 600px;
     border-radius: 8px;
     display: none;
