@@ -4,11 +4,45 @@ body {
     font-size: 22px;
     background-color: rgb(0, 0, 0, 0.8);
     font-family: sans-serif;
-    /*opacity: 0.3;*/
+}
+
+.first-page {
+    display: flex;
+}
+
+.choose-one {
+    width: 350px;
+    height: 500px;
+    background-color: aqua;
+    margin-top: 120px;
+    margin-left: 250px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.choose-two {
+    width: 350px;
+    height: 500px;
+    background-color: aqua;
+    margin-top: 120px;
+    margin-left: 300px;
+}
+
+.biggest-countries {
+    display: none;
+}
+
+.div-body {
+    /*display: none;*/
+}
+
+.smallest-countries {
+    display: none;
 }
 
 .flag {
     position: absolute;
+    cursor: pointer;
 }
 
 #flag-1 {
@@ -34,15 +68,34 @@ body {
 #flag-5 {
     top: 470px;
     left: 1000px;
-}  
+}
 
+.btn-backFirstPage {
+    margin-top: 530px;
+    margin-left: 605px;
+    width: 300px;
+    height: 70px;
+    font-size: 22px;
+    background: #000000;
+    color: #ffffff;
+    border: 1.5px solid #fff;
+    padding: 0.2em 0.6em;
+    border-radius: 8px;
+}
+
+.btn-backFirstPage:hover {
+    background: #ffffff;
+    color: #000000;
+    border: 1.5px solid #000000;
+    cursor: pointer;
+}
 
 
 .modal {
     position: relative;
     background-color: rgba(0, 0, 0, 0.7);
     margin: 0 auto;
-    margin-top: 11%;
+    margin-top: -32%;
     max-width: 600px;
     border-radius: 8px;
     display: none;
