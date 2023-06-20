@@ -1,8 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*opacity: 0.9;*/
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://img.freepik.com/fotos-premium/3d-renderizacao-de-estrelas-na-imitacao-do-ceu-noturno_599037-519.jpg);
+    opacity: 0.8;
+    /*background-size: cover;*/
+}
+
+.globe {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-image: url(https://pensargeo.files.wordpress.com/2011/07/mundi.jpg);
+    background-size: cover;
+    box-shadow: -25px -25px 25px #000 inset, 10px 10px 30px #fff inset, 0px 0px 40px #174fa9;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    to{background-position: 100%;}
+}
+
 body {
     color: #fff;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
     font-size: 22px;
-    background-color: rgb(0, 0, 0, 0.8);
+    /*background-color: rgb(0, 0, 0, 0.8);*/
     font-family: sans-serif;
 }
 
@@ -11,25 +44,29 @@ body {
 }
 
 .choose-one {
+    position: absolute;
     width: 350px;
     height: 500px;
     background-color: rgb(0, 0, 0);
-    margin-top: 120px;
-    margin-left: 250px;
+    margin-top: -250px;
+    margin-left: -800px;
     font-size: 45px;
     text-align: center;
     font-weight: bold;
+    opacity: 0.9;
 }
 
 .choose-two {
+    position: absolute;
     width: 350px;
     height: 500px;
     background-color: rgb(0, 0, 0);
-    margin-top: 120px;
-    margin-left: 250px;
+    margin-top: -250px;
+    margin-left: -250px;
     font-size: 45px;
     text-align: center;
     font-weight: bold;
+    opacity: 0.9;
 }
 
 .emphasis {
@@ -47,6 +84,7 @@ body {
     border: 3px solid #fff;
     padding: 0.2em 0.6em;
     border-radius: 8px;
+    margin-top: 40px;
 }
 
 .btn-choice:hover {
@@ -58,10 +96,16 @@ body {
 }
 
 .biggest-countries {
+    position: absolute;
+    margin-top: -360px;
+    margin-left: -1100px;
     display: none;
 }
 
 .smallest-countries {
+    position: absolute;
+    margin-top: -360px;
+    margin-left: -1100px;
     display: none;
 }
 
@@ -71,63 +115,75 @@ body {
 }
 
 #flag-1 {
-    top: 120px;
+    top: 90px;
     left: 150px;
 }
 
 #flag-2 {
-    top: 120px;
+    top: 90px;
     left: 1000px;
 }
 
 #flag-3 {
-    top: 295px;
+    top: 265px;
     left: 580px;
 }
 
 #flag-4 {
-    top: 470px;
+    top: 440px;
     left: 150px;
 }
 
 #flag-5 {
-    top: 470px;
+    top: 440px;
     left: 1000px;
 }
 
 .btn-backFirstPage {
-    margin-top: 530px;
-    margin-left: 605px;
+    margin-top: 500px;
+    margin-left: 615px;
     width: 300px;
     height: 70px;
     font-size: 22px;
-    background: #000000;
-    color: #ffffff;
-    border: 1.5px solid #fff;
+    background: #fff;
+    color: #4378cd;
+    border: 1.5px solid #4378cd;
     padding: 0.2em 0.6em;
     border-radius: 8px;
+    font-weight: bold;
 }
 
 .btn-backFirstPage:hover {
-    background: #ffffff;
-    color: #000000;
-    border: 1.5px solid #000000;
+    background: #4378cd;
+    color: #fff;
+    border: 1.5px solid #fff;
     cursor: pointer;
 }
 
 
 .modal {
-    position: relative;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     margin: 0 auto;
-    margin-top: -32%;
-    max-width: 600px;
+    margin-top: -150px;
+    margin-left: -700px;
+    width: 700px;
+    height: 300px;
     border-radius: 8px;
     display: none;
     font-size: 20px;
     color: #fff;
     border: 4px solid #000000;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+}
+
+.modal h1 {
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.modal p {
+    margin-bottom: 13px;
 }
 
 h1 {
@@ -145,8 +201,8 @@ h1 {
     background: #000000;
     color: #ffffff;
     border: 1.5px solid #fff;
-    margin-bottom: 18px;
-    margin-left: 80%;
+    margin-top: 0px;
+    margin-left: 560px;
     padding: 0.2em 0.6em;
     border-radius: 8px;
   }

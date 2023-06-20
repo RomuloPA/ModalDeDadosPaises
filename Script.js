@@ -60,6 +60,10 @@ function openModal(countryID) {
 
   modal.style.display = 'block';
 
+  var globe = document.getElementById("globe");
+  globe.style.opacity = '0.3';
+  globe.style.filter = 'blur(10px)';
+
   var biggestCountries = document.getElementById("biggest-countries");
   biggestCountries.style.opacity = '0.3';
   biggestCountries.style.filter = 'blur(10px)';
@@ -72,6 +76,10 @@ function openModal(countryID) {
 function closeModal() {
   var modal = document.getElementById("modal");
   modal.style.display = 'none';
+
+  var globe = document.getElementById("globe");
+  globe.style.opacity = '1';
+  globe.style.filter = 'none';
 
   var biggestCountries = document.getElementById("biggest-countries");
   biggestCountries.style.opacity = '1';

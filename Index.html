@@ -7,77 +7,80 @@
     <title>Modal Para Consulta dos Dados de Alguns Países</title>
 </head>
 <body id="body">
-    <div class="first-page" id="first-page">
-        <div class="choose-one">
-            <p>Se você deseja conhecer um pouco sobre os 5 <span class="emphasis">maiores</span> países do MUNDO</p>
-            <button class="btn-choice" id="btn-choice" onclick="biggestCountriesPage()">CLIQUE AQUI</button>
-        </div>
-        <div class="choose-two">
-            <p>Se você deseja conhecer um pouco sobre os 5 <span class="emphasis">menores</span> países do MUNDO</p>
-            <button class="btn-choice" id="btn-choice" onclick="smallestCountriesPage()">CLIQUE AQUI</button>
-        </div>
-    </div>
-
-    <div class="country-pages" id="country-pages">
-        <div class="biggest-countries" id="biggest-countries">
-            <h1>Clique na bandeira desejada e descubra algumas informações do país:</h1>
-            <div class="flag" id="flag-1">
-                <img src="Russia.png" alt="Bandeira da Rússia" width="360" height="230" onclick="openModal(1)">
+    <div class="background" id="background">
+        <div class="globe" id="globe"></div>
+            <div class="first-page" id="first-page">
+            <div class="choose-one">
+                <p><br>Se você deseja conhecer um pouco sobre os 5 <span class="emphasis">maiores</span> países do MUNDO</p>
+                <button class="btn-choice" id="btn-choice" onclick="biggestCountriesPage()">CLIQUE AQUI</button>
             </div>
-            <div class="flag" id="flag-2">
-                <img src="Canada.png" alt="Bandeira do Canadá" width="360" height="230" onclick="openModal(2)">
-            </div>
-            <div class="flag" id="flag-3">
-                <img src="China.png" alt="Bandeira da China" width="360" height="230" onclick="openModal(3)">
-            </div>
-            <div class="flag" id="flag-4">
-                <img src="Estados-Unidos.png" alt="Bandeira dos Estados Unidos" width="360" height="230" onclick="openModal(4)">
-            </div>
-            <div class="flag" id="flag-5">
-                <img src="Brasil.jpg" alt="Bandeira do Brasil" width="360" height="230" onclick="openModal(5)">
-            </div>
-            <div class="backFirstPage" id="backFirstPage">
-                <button class="btn-backFirstPage" onclick="backFirstPage()">CLIQUE AQUI<br> e volte para página inicial </button>
+            <div class="choose-two">
+                <p><br>Se você deseja conhecer um pouco sobre os 5 <span class="emphasis">menores</span> países do MUNDO</p>
+                <button class="btn-choice" id="btn-choice" onclick="smallestCountriesPage()">CLIQUE AQUI</button>
             </div>
         </div>
 
-        <div class="smallest-countries" id="smallest-countries">
-            <h1>Clique na bandeira desejada e descubra algumas informações do país:</h1>
-            <div class="flag" id="flag-1">
-                <img src="Vaticano.png" alt="Bandeira do Vaticano" width="360" height="230" onclick="openModal(6)">
-            </div>
-            <div class="flag" id="flag-2">
-                <img src="Monaco.png" alt="Bandeira de Mônaco" width="360" height="230" onclick="openModal(7)">
-            </div>
-            <div class="flag" id="flag-3">
-                <img src="Nauru.png" alt="Bandeira de Nauru" width="360" height="230" onclick="openModal(8)">
-            </div>
-            <div class="flag" id="flag-4">
-                <img src="Tuvalu.png" alt="Bandeira de Tuvalu" width="360" height="230" onclick="openModal(9)">
-            </div>
-            <div class="flag" id="flag-5">
-                <img src="Sao Cristovao e Nevis.png" alt="Bandeira de São Cristóvão e Nevis" width="360" height="230" onclick="openModal(10)">
-            </div>
-            <div class="backFirstPage" id="backFirstPage">
-                <button class="btn-backFirstPage" onclick="backFirstPage()">CLIQUE AQUI<br> e volte para página inicial </button>
-            </div>
-        </div>
-
-
-        <!-- Modal -->
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <h1>Alguns dados sobre o país:</h1>
-                <div class="country-info">
-                    <p><strong>País:</strong> <span id="country-name"></span></p>
-                    <p><strong>Capital:</strong> <span id="country-capital"></span></p>
-                    <p><strong>Área Territorial:</strong> <span id="country-territorial-area"></span></p>
-                    <p><strong>População:</strong> <span id="country-population"></span></p>
-                    <p><strong>Continente:</strong> <span id="country-continent"></span></p>
-                    <button class="btn-close" onclick="closeModal()">Fechar</button>
+        <div class="country-pages" id="country-pages">
+            <div class="biggest-countries" id="biggest-countries">
+                <h1>Clique na bandeira desejada e descubra algumas informações do país:</h1>
+                <div class="flag" id="flag-1">
+                    <img src="Russia.png" alt="Bandeira da Rússia" width="360" height="230" onclick="openModal(1)">
+                </div>
+                <div class="flag" id="flag-2">
+                    <img src="Canada.png" alt="Bandeira do Canadá" width="360" height="230" onclick="openModal(2)">
+                </div>
+                <div class="flag" id="flag-3">
+                    <img src="China.png" alt="Bandeira da China" width="360" height="230" onclick="openModal(3)">
+                </div>
+                <div class="flag" id="flag-4">
+                    <img src="Estados-Unidos.png" alt="Bandeira dos Estados Unidos" width="360" height="230" onclick="openModal(4)">
+                </div>
+                <div class="flag" id="flag-5">
+                    <img src="Brasil.jpg" alt="Bandeira do Brasil" width="360" height="230" onclick="openModal(5)">
+                </div>
+                <div class="backFirstPage" id="backFirstPage">
+                    <button class="btn-backFirstPage" onclick="backFirstPage()">CLIQUE AQUI<br> e volte para página inicial </button>
                 </div>
             </div>
-        </div>
+
+            <div class="smallest-countries" id="smallest-countries">
+                <h1>Clique na bandeira desejada e descubra algumas informações do país:</h1>
+                <div class="flag" id="flag-1">
+                    <img src="Vaticano.png" alt="Bandeira do Vaticano" width="360" height="230" onclick="openModal(6)">
+                </div>
+                <div class="flag" id="flag-2">
+                    <img src="Monaco.png" alt="Bandeira de Mônaco" width="360" height="230" onclick="openModal(7)">
+                </div>
+                <div class="flag" id="flag-3">
+                    <img src="Nauru.png" alt="Bandeira de Nauru" width="360" height="230" onclick="openModal(8)">
+                </div>
+                <div class="flag" id="flag-4">
+                    <img src="Tuvalu.png" alt="Bandeira de Tuvalu" width="360" height="230" onclick="openModal(9)">
+                </div>
+                <div class="flag" id="flag-5">
+                    <img src="Sao Cristovao e Nevis.png" alt="Bandeira de São Cristóvão e Nevis" width="360" height="230" onclick="openModal(10)">
+                </div>
+                <div class="backFirstPage" id="backFirstPage">
+                    <button class="btn-backFirstPage" onclick="backFirstPage()">CLIQUE AQUI<br> e volte para página inicial </button>
+                </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <h1>Alguns dados sobre o país:</h1>
+                    <div class="country-info">
+                        <p><strong>País:</strong> <span id="country-name"></span></p>
+                        <p><strong>Capital:</strong> <span id="country-capital"></span></p>
+                        <p><strong>Área Territorial:</strong> <span id="country-territorial-area"></span></p>
+                        <p><strong>População:</strong> <span id="country-population"></span></p>
+                        <p><strong>Continente:</strong> <span id="country-continent"></span></p>
+                        <button class="btn-close" onclick="closeModal()">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
     </div>
 
     <script src="Script.js"></script>
